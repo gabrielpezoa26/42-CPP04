@@ -1,0 +1,11 @@
+16/11/25
+
+-> revisar polimorfismo
+
+
+
+
+links:
+	https://www.youtube.com/watch?v=B-WWdC-H0zw
+
+	https://cplusplus.com/doc/tutorial/polymorphism/
