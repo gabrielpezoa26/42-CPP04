@@ -6,7 +6,7 @@
 /*   By: gcesar-n <gcesar-n@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/16 12:54:53 by gcesar-n          #+#    #+#             */
-/*   Updated: 2025/11/16 13:15:05 by gcesar-n         ###   ########.fr       */
+/*   Updated: 2025/11/16 14:16:59 by gcesar-n         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,18 +14,17 @@
 #define DOG_HPP
 
 #include <iostream>
+#include "Animal.hpp"
 
 class Dog : public Animal
 {
-	private:
-		std::string type;
-
-
 	public:
 		Dog();
 		Dog(const Dog& other);
 		Dog& operator=(const Dog& other);
 		~Dog();
+
+		void makeSound();
 };
 
 

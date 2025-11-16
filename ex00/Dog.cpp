@@ -6,7 +6,7 @@
 /*   By: gcesar-n <gcesar-n@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/16 12:55:00 by gcesar-n          #+#    #+#             */
-/*   Updated: 2025/11/16 13:16:48 by gcesar-n         ###   ########.fr       */
+/*   Updated: 2025/11/16 17:52:44 by gcesar-n         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,10 @@
 Dog::Dog()
 {
 	log("Dog-> Default constructor called");
+	type = "Dog";
 }
 
-Dog::Dog(const Dog& other)
+Dog::Dog(const Dog& other) : Animal()
 {
 	log("Dog-> Copy constructor called");
 	*this = other;
@@ -37,7 +38,7 @@ Dog::~Dog()
 	log("Dog-> Default destructor called");
 }
 
-Dog::makeSound()
+void Dog::makeSound()
 {
-	log("dadsadsds");
+	logColored("auauauauuauauauauua", GREEN);
 }

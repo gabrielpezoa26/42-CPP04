@@ -1,5 +1,5 @@
 NAME = Animals
-OBJECTS = objects/main.o objects/Animal.o
+OBJECTS = objects/main.o objects/Animal.o objects/Dog.o objects/Cat.o
 CC = c++
 CFLAGS = -Wall -Wextra -Werror -std=c++98
 OBJ_DIR = objects
@@ -14,12 +14,17 @@ $(OBJECTS): | $(OBJ_DIR)
 $(OBJ_DIR):
 	mkdir -p $(OBJ_DIR)
 
-
 objects/main.o: main.cpp
 	$(CC) $(CFLAGS) -c main.cpp -o objects/main.o
 
 objects/Animal.o: Animal.cpp
 	$(CC) $(CFLAGS) -c Animal.cpp -o objects/Animal.o
+
+objects/Dog.o: Dog.cpp
+	$(CC) $(CFLAGS) -c Dog.cpp -o objects/Dog.o
+
+objects/Cat.o: Cat.cpp
+	$(CC) $(CFLAGS) -c Cat.cpp -o objects/Cat.o
 
 clean:
 	rm -rf $(OBJ_DIR)
