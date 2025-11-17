@@ -6,7 +6,7 @@
 /*   By: gcesar-n <gcesar-n@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/16 12:54:56 by gcesar-n          #+#    #+#             */
-/*   Updated: 2025/11/16 17:44:30 by gcesar-n         ###   ########.fr       */
+/*   Updated: 2025/11/16 18:09:26 by gcesar-n         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ class Cat : public Animal
 		Cat& operator=(const Cat& other);
 		~Cat();
 
-		void makeSound();
+		void makeSound()const;
 };
 
 

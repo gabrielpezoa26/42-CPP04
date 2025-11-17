@@ -1,30 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Cat.cpp                                            :+:      :+:    :+:   */
+/*   WrongCat.cpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gcesar-n <gcesar-n@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/16 12:54:46 by gcesar-n          #+#    #+#             */
-/*   Updated: 2025/11/16 18:09:43 by gcesar-n         ###   ########.fr       */
+/*   Created: 2025/11/17 17:16:26 by gcesar-n          #+#    #+#             */
+/*   Updated: 2025/11/17 17:35:59 by gcesar-n         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Cat.hpp"
+#include "WrongCat.hpp"
 
-Cat::Cat()
+WrongCat::WrongCat()
 {
-	log("Cat-> Default constructor called");
-	type = "Cat";
+	log("WrongCat-> Default constructor called");
+	type = "WrongCat";
 }
 
-Cat::Cat(const Cat& other) : Animal()
+WrongCat::WrongCat(const WrongCat& other) : WrongAnimal()
 {
-	log("Cat-> Copy constructor called");
+	log("WrongCat-> Copy constructor called");
 	*this = other;
 }
 
-Cat& Cat::operator=(const Cat& other)
+WrongCat& WrongCat::operator=(const WrongCat& other)
 {
 	if (this != &other)
 	{
@@ -33,13 +33,13 @@ Cat& Cat::operator=(const Cat& other)
 	return (*this);
 }
 
-Cat::~Cat()
+WrongCat::~WrongCat()
 {
-	log("Cat-> Default destructor called");
+	log("WrongCat-> Default destructor called");
 }
 
-void Cat::makeSound()const
+void WrongCat::makeSound()const
 {
-	logColored("miaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaau", BLUE);
+	logColored("miaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaau", RED);
 
 }

@@ -6,24 +6,15 @@
 /*   By: gcesar-n <gcesar-n@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/16 12:33:38 by gcesar-n          #+#    #+#             */
-/*   Updated: 2025/11/16 18:00:49 by gcesar-n         ###   ########.fr       */
+/*   Updated: 2025/11/17 17:55:02 by gcesar-n         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Animal.hpp"
 #include "Dog.hpp"
 #include "Cat.hpp"
-
-// int main()
-// {
-// 	Animal Animal;
-// 	Dog Dog;
-// 	Cat Cat;
-
-// 	Animal.makeSound();
-// 	Dog.makeSound();
-// 	Cat.makeSound();
-// }
+#include "WrongAnimal.hpp"
+#include "WrongCat.hpp"
 
 int main()
 {
@@ -41,5 +32,24 @@ int main()
 	i->makeSound();
 	j->makeSound();
 	meta->makeSound();
+
+	const WrongAnimal* mangoloko = new WrongAnimal();
+	const WrongCat* banana = new WrongCat();
+
+
+	std::cout << mangoloko->getType() << " " << std::endl;
+	mangoloko->makeSound();
+
+	std::cout << banana->getType() << " " << std::endl;
+	banana->makeSound();
+
+
+
+
+	delete meta;
+	delete j;
+	delete i;
+	delete mangoloko;
+	delete banana;
 	return 0;
 }

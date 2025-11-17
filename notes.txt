@@ -1,9 +1,15 @@
 16/11/25
 
--> revisar polimorfismo
+fazer:
+	ex00:
+		-> adicionar mais testes na main
+		-> implementar WrongCat && Wrong Animal
+		-> adicionar mais testes na main dnv
 
 
-
+estudar:
+	-> polimorfismo
+	-> subtipos
 
 links:
 	https://www.youtube.com/watch?v=B-WWdC-H0zw

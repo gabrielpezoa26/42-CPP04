@@ -6,7 +6,7 @@
 /*   By: gcesar-n <gcesar-n@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/16 12:35:19 by gcesar-n          #+#    #+#             */
-/*   Updated: 2025/11/16 18:04:02 by gcesar-n         ###   ########.fr       */
+/*   Updated: 2025/11/17 15:57:28 by gcesar-n         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,10 +31,10 @@ class Animal
 		Animal();
 		Animal(const Animal& other);
 		Animal& operator=(const Animal& other);
-		~Animal();
+		virtual ~Animal();
 
 		std::string getType()const;
-		void makeSound()const;
+		virtual void makeSound()const;
 };
 
 void log(std::string message);

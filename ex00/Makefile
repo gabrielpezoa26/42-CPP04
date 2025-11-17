@@ -1,5 +1,5 @@
 NAME = Animals
-OBJECTS = objects/main.o objects/Animal.o objects/Dog.o objects/Cat.o
+OBJECTS = objects/main.o objects/Animal.o objects/Dog.o objects/Cat.o objects/WrongAnimal.o objects/WrongCat.o
 CC = c++
 CFLAGS = -Wall -Wextra -Werror -std=c++98
 OBJ_DIR = objects
@@ -25,6 +25,13 @@ objects/Dog.o: Dog.cpp
 
 objects/Cat.o: Cat.cpp
 	$(CC) $(CFLAGS) -c Cat.cpp -o objects/Cat.o
+
+objects/WrongAnimal.o: WrongAnimal.cpp
+	$(CC) $(CFLAGS) -c WrongAnimal.cpp -o objects/WrongAnimal.o
+
+objects/WrongCat.o: WrongCat.cpp
+	$(CC) $(CFLAGS) -c WrongCat.cpp -o objects/WrongCat.o
+
 
 clean:
 	rm -rf $(OBJ_DIR)
