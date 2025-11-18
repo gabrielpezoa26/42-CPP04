@@ -6,7 +6,7 @@
 /*   By: gcesar-n <gcesar-n@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/17 16:58:43 by gcesar-n          #+#    #+#             */
-/*   Updated: 2025/11/17 17:28:19 by gcesar-n         ###   ########.fr       */
+/*   Updated: 2025/11/17 18:26:01 by gcesar-n         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ WrongAnimal::WrongAnimal()
 	type = "empty";
 }
 
-WrongAnimal::WrongAnimal(const WrongAnimal& other) : Animal()
+WrongAnimal::WrongAnimal(const WrongAnimal& other)
 {
 	log("WrongAnimal-> Copy constructor called");
 	*this = other;
@@ -36,6 +36,11 @@ WrongAnimal& WrongAnimal::operator=(const WrongAnimal& other)
 WrongAnimal::~WrongAnimal()
 {
 	log("WrongAnimal-> Default destructor called");
+}
+
+std::string WrongAnimal::getType()const
+{
+	return type;
 }
 
 void WrongAnimal::makeSound()const
